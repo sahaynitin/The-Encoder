@@ -9,7 +9,7 @@ from pyrogram.types import (
 from config import Config
 from pyrogram import Client
 from database.database import db
-from database.display import humanbytes
+from VideoEncoder.utils.progress import humanbytes
 from VideoEncoder.plugins.broadcast import broadcast_handler
 
 

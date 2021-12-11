@@ -1,6 +1,6 @@
 # (c) @AbirHasan2005
 
-from configs import Config
+from VideoEncoder.__init__ import Config
 from database.database import db
 from pyrogram import Client
 from pyrogram.types import Message

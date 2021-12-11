@@ -10,7 +10,7 @@ from config import Config
 from pyrogram import Client
 from database.database import db
 from database.display import humanbytes
-from broadcast import broadcast_handler
+from VideoEncoder.plugins.broadcast import broadcast_handler
 
 
 @Client.on_message(filters.command("status") & filters.user(Config.OWNER_ID) & ~filters.edited)

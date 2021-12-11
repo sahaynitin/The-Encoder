@@ -8,7 +8,7 @@ import datetime
 import aiofiles
 import traceback
 import aiofiles.os
-from VideoEncoder.__init__ import Config
+from config import Config
 from database.database import db
 from pyrogram.types import Message
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid

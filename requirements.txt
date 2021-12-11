@@ -5,3 +5,8 @@ hachoir
 ffmpeg-python
 aiofiles
 motor
+pyromod
+dnspython
+Pillow
+mutagen
+psutil

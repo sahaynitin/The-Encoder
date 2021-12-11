@@ -24,7 +24,13 @@ from pyrogram import Client
 if os.path.exists('VideoEncoder/config.env'):
     load_dotenv('VideoEncoder/config.env')
 
-# Variables #
+    LOGGER = logging
+    OWNER_ID = int(os.environ.get("OWNER_ID", 1445283714))
+    PRO_USERS = list(set(int(x) for x in os.environ.get("PRO_USERS", "0").split()))
+    PRO_USERS.append(OWNER_ID)
+    MONGODB_URI = os.environ.get("MONGODB_URI", "")
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-100"))
+    BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", "False"))
 # Basics
 api_id = int(os.environ.get("API_ID"))
 api_hash = os.environ.get("API_HASH")

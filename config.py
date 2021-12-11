@@ -1,4 +1,6 @@
 import logging
+import os
+   
 class Config(object):
     LOGGER = logging
     OWNER_ID = int(os.environ.get("OWNER_ID", 1445283714))

@@ -2,7 +2,7 @@
 
 import datetime
 import motor.motor_asyncio
-from VideoEncoderimport Config
+from VideoEncoder.__init__ import Config
 
 
 class Database:

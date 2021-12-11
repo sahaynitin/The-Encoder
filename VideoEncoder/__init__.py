@@ -23,7 +23,7 @@ from pyrogram import Client
 
 if os.path.exists('VideoEncoder/config.env'):
     load_dotenv('VideoEncoder/config.env')
-
+class Config(object)
     LOGGER = logging
     OWNER_ID = int(os.environ.get("OWNER_ID", 1445283714))
     PRO_USERS = list(set(int(x) for x in os.environ.get("PRO_USERS", "0").split()))
